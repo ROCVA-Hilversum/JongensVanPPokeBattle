@@ -30,12 +30,12 @@ $opponent = $game['opponent'];
     <section class="fighter opponent" aria-label="Tegenstander">
       <div class="health-card"><strong><?= htmlspecialchars((string)$opponent['name'], ENT_QUOTES, 'UTF-8') ?></strong><div class="health-track"><div class="health-fill" style="width:<?= max(0,min(100,(int)($opponent['hp'] / max(1,$opponent['max_hp']) * 100))) ?>%"></div></div><small><?= (int)$opponent['hp'] ?> / <?= (int)$opponent['max_hp'] ?> HP</small></div>
       <div class="pokemon-sprites">
-        <img class="monster-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= isset($opponent['pokemon_id']) ? $opponent['pokemon_id'] : 25 ?>.png" alt="<?= htmlspecialchars((string)$opponent['name'], ENT_QUOTES, 'UTF-8') ?>">
+        <img class="monster-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= isset($opponent['pokemon_id']) ? $opponent['pokemon_id'] : 26 ?>.png" alt="<?= htmlspecialchars((string)$opponent['name'], ENT_QUOTES, 'UTF-8') ?>">
       </div>
     </section>
     <section class="fighter player" aria-label="Jouw monster">
       <div class="pokemon-sprites">
-        <img class="monster-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<?= isset($player['pokemon_id']) ? $player['pokemon_id'] : 4 ?>.png" alt="<?= htmlspecialchars((string)$player['name'], ENT_QUOTES, 'UTF-8') ?>">
+        <img class="monster-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<?= isset($player['pokemon_id']) ? $player['pokemon_id'] : 5 ?>.png" alt="<?= htmlspecialchars((string)$player['name'], ENT_QUOTES, 'UTF-8') ?>">
       </div>
       <div class="health-card"><strong><?= htmlspecialchars((string)$player['name'], ENT_QUOTES, 'UTF-8') ?></strong><div class="health-track"><div class="health-fill" style="width:<?= max(0,min(100,(int)($player['hp'] / max(1,$player['max_hp']) * 100))) ?>%"></div></div><small><?= (int)$player['hp'] ?> / <?= (int)$player['max_hp'] ?> HP</small></div>
     </section>
